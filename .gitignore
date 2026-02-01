@@ -1,0 +1,6 @@
+# Ignore Windows executables
+*.exe
+
+# Ignore build outputs (optional)
+*.out
+*.o
