@@ -7,6 +7,10 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&p);
+    if (p < 1 || p > n) {
+        printf("Invalid position");
+        return 0;
+    }
     p=p-1;
     for(int i=p;i<n-1;i++){
         arr[i]=arr[i+1];
