@@ -14,11 +14,6 @@ int main() {
         return 0;
     }
 
-    if (r != c) {
-        printf("Not a square matrix\n");
-        return 0;
-    }
-
     int matrix[r][c];
 
     printf("Enter %d elements:\n", r * c);
