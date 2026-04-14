@@ -16,12 +16,10 @@ int countZeroSumSubarrays(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         prefix_sum += arr[i];
 
-        // Check if this prefix sum has been seen before
         if (freq[prefix_sum + offset] > 0) {
             count += freq[prefix_sum + offset];
         }
 
-        // Update frequency
         freq[prefix_sum + offset]++;
     }
 
